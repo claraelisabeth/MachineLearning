@@ -1,5 +1,6 @@
-pandas as pd
-numpy as np
-seaborn as sns
-missingno as msno
-openpyxl
+pandas
+numpy
+seaborn
+missingno
+matplotlib
+scikit-learn
