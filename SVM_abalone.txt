@@ -1,0 +1,131 @@
+Support Vector Machines abalone_encoded
+Time: 
+Scaler: Standarad Scaler
+
+Best parameter:  {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'} 
+Best score for training data: 0.3069444444444444 
+
+Model Performance
+Accuracy = 76.72%.
+Classification Report:
+              precision    recall  f1-score   support
+
+       adult       0.77      0.90      0.83       661
+      senior       0.72      0.45      0.55       173
+       young       0.78      0.62      0.69       210
+
+    accuracy                           0.77      1044
+   macro avg       0.76      0.65      0.69      1044
+weighted avg       0.76      0.77      0.76      1044
+
+Confusion Matrix:
+[[594  30  37]
+ [ 96  77   0]
+ [ 80   0 130]]
+
+_______________________________________________________________________________________________
+
+Support Vector Machines abalone_encoded
+Time: 
+Scaler: Standarad Scaler
+
+Best parameter:  {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'} 
+Best score for training data: 0.3069444444444444 
+
+Model Performance
+Accuracy = 76.72%.
+Classification Report:
+              precision    recall  f1-score   support
+
+       adult       0.77      0.90      0.83       661
+      senior       0.72      0.45      0.55       173
+       young       0.78      0.62      0.69       210
+
+    accuracy                           0.77      1044
+   macro avg       0.76      0.65      0.69      1044
+weighted avg       0.76      0.77      0.76      1044
+
+Confusion Matrix:
+[[594  30  37]
+ [ 96  77   0]
+ [ 80   0 130]]
+
+_______________________________________________________________________________________________
+
+Support Vector Machines abalone_encoded_IQR
+Time: 83m 4s
+
+Best parameter:  {'C': 1, 'degree': 2, 'kernel': 'poly'} 
+Best score for training data: 0.27462487153134635 
+
+
+_______________________________________________________________________________________________
+
+Support Vector Machines df_gym_Z
+Time: 22m 21s
+
+Best parameter:  {'C': 1, 'kernel': 'linear'} 
+Best score for training data: 0.3069444444444444 
+
+Model Performance
+Accuracy = 21.67%.
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.14      0.08      0.11        59
+           1       0.18      0.13      0.15        54
+           2       0.24      0.37      0.29        63
+           3       0.24      0.27      0.25        64
+
+    accuracy                           0.22       240
+   macro avg       0.20      0.21      0.20       240
+weighted avg       0.20      0.22      0.20       240
+
+Confusion Matrix:
+[[ 5  9 24 21]
+ [ 9  7 20 18]
+ [ 9 15 23 16]
+ [13  7 27 17]]
+Model Performance
+Accuracy = 21.67%.
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.14      0.08      0.11        59
+           1       0.18      0.13      0.15        54
+           2       0.24      0.37      0.29        63
+           3       0.24      0.27      0.25        64
+
+    accuracy                           0.22       240
+   macro avg       0.20      0.21      0.20       240
+weighted avg       0.20      0.22      0.20       240
+
+Confusion Matrix:
+[[ 5  9 24 21]
+ [ 9  7 20 18]
+ [ 9 15 23 16]
+ [13  7 27 17]]
+Improvement of 0.00%.
+
+
+
+_______________________________________________________________________________________________
+
+Support Vector Machines df_gym_selected
+Time:
+
+
+
+
+
+_______________________________________________________________________________________________
+
+Support Vector Machines df_gym_scaled
+Time:
+
+
+
+_______________________________________________________________________________________________
+
+Support Vector Machines df_gym_Z_scaled
+Time:

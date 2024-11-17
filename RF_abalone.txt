@@ -1,0 +1,283 @@
+Model: Random Forest 
+Dataset: abalone_encoded (without outlier removal)
+Time: 
+Scaling: no scaling
+Base model: n_estimators=100, random_state=42
+_______________________________________________________________________________________________
+Model: Random Forest 
+Dataset: abalone_encoded (without outlier removal)
+Time: 
+Scaling: StandardScaling
+Base model: n_estimators=100, random_state=42
+
+
+_______________________________________________________________________________________________
+Model: Random Forest 
+Dataset: abalone_encoded (without outlier removal)
+Time: 
+Scaling: np.sqrt
+Base model: n_estimators=100, random_state=42
+
+
+_______________________________________________________________________________________________
+Model: Random Forest 
+Dataset: abalone_encoded (without outlier removal)
+Time: 10min 34s
+Scaling: np.sqrt
+
+Best random model: 
+{'bootstrap': True,
+ 'ccp_alpha': 0.0,
+ 'class_weight': None,
+ 'criterion': 'gini',
+ 'max_depth': 90,
+ 'max_features': 'sqrt',
+ 'max_leaf_nodes': None,
+ 'max_samples': None,
+ 'min_impurity_decrease': 0.0,
+ 'min_samples_leaf': 4,
+ 'min_samples_split': 2,
+ 'min_weight_fraction_leaf': 0.0,
+ 'monotonic_cst': None,
+ 'n_estimators': 800,
+ 'n_jobs': None,
+ 'oob_score': False,
+ 'random_state': 42,
+ 'verbose': 0,
+ 'warm_start': False}
+
+Model Performance
+Accuracy = 76.15%.
+Classification Report:
+              precision    recall  f1-score   support
+
+       adult       0.77      0.89      0.83       661
+      senior       0.65      0.39      0.49       173
+       young       0.79      0.66      0.72       210
+
+    accuracy                           0.76      1044
+   macro avg       0.74      0.65      0.68      1044
+weighted avg       0.75      0.76      0.75      1044
+
+Confusion Matrix:
+[[589  37  35]
+ [104  68   1]
+ [ 72   0 138]]
+Improvement of 1.53%.
+
+
+_______________________________________________________________________________________________
+Model: Random Forest 
+Dataset: abalone_encoded_IQR 
+Time: 
+Scaling: no scaling
+Base model: n_estimators=100, random_state=42
+
+
+_______________________________________________________________________________________________
+Model: Random Forest 
+Dataset: abalone_encoded_IQR 
+Time: 
+Scaling: StandardScaling
+Base model: n_estimators=100, random_state=42
+
+
+_______________________________________________________________________________________________
+Model: Random Forest 
+Dataset: abalone_encoded_IQR 
+Time: 1.18 s
+Scaling: np.sqrt
+Base model: n_estimators=100, random_state=42
+
+Model Performance
+Accuracy = 80.94%.
+Classification Report:
+              precision    recall  f1-score   support
+
+       adult       0.82      0.94      0.87       731
+      senior       0.36      0.04      0.07       108
+       young       0.80      0.75      0.78       205
+
+    accuracy                           0.81      1044
+   macro avg       0.66      0.58      0.57      1044
+weighted avg       0.77      0.81      0.77      1044
+
+Confusion Matrix:
+[[687   7  37]
+ [103   4   1]
+ [ 51   0 154]]
+CPU times: total: 375 ms
+Wall time: 1.18 s
+
+
+_______________________________________________________________________________________________
+Model: Random Forest 
+Dataset: abalone_encoded_IQR 
+Time: 11min 11s
+Scaling: np.sqrt
+
+Best random model: 
+{'bootstrap': True,
+ 'ccp_alpha': 0.0,
+ 'class_weight': None,
+ 'criterion': 'gini',
+ 'max_depth': 50,
+ 'max_features': 'sqrt',
+ 'max_leaf_nodes': None,
+ 'max_samples': None,
+ 'min_impurity_decrease': 0.0,
+ 'min_samples_leaf': 4,
+ 'min_samples_split': 10,
+ 'min_weight_fraction_leaf': 0.0,
+ 'monotonic_cst': None,
+ 'n_estimators': 800,
+ 'n_jobs': None,
+ 'oob_score': False,
+ 'random_state': 42,
+ 'verbose': 0,
+ 'warm_start': False}
+
+Model Performance
+Accuracy = 81.32%.
+Classification Report:
+              precision    recall  f1-score   support
+
+       adult       0.82      0.94      0.88       731
+      senior       0.00      0.00      0.00       108
+       young       0.80      0.78      0.79       205
+
+    accuracy                           0.81      1044
+   macro avg       0.54      0.57      0.55      1044
+weighted avg       0.73      0.81      0.77      1044
+
+Confusion Matrix:
+[[690   2  39]
+ [107   0   1]
+ [ 46   0 159]]
+Improvement of 0.47%.
+
+
+_______________________________________________________________________________________________
+Model: Random Forest 
+Dataset: abalone_encoded_Zscore
+Time: 312.5 ms
+Scaling: no scaling
+Base model: n_estimators=100, random_state=42
+
+Model Performance
+Accuracy = 76.96%.
+Classification Report:
+              precision    recall  f1-score   support
+
+       adult       0.78      0.90      0.84       650
+      senior       0.67      0.31      0.42       152
+       young       0.77      0.69      0.73       205
+
+    accuracy                           0.77      1007
+   macro avg       0.74      0.63      0.66      1007
+weighted avg       0.76      0.77      0.75      1007
+
+Confusion Matrix:
+[[587  23  40]
+ [103  47   2]
+ [ 64   0 141]]
+
+
+_______________________________________________________________________________________________
+Model: Random Forest 
+Dataset: abalone_encoded_Zscore
+Time: 281.25 ms 
+Scaling: StandardScaler
+Base model: n_estimators=100, random_state=42
+
+
+Model Performance
+Accuracy = 76.86%.
+Classification Report:
+              precision    recall  f1-score   support
+
+       adult       0.78      0.90      0.84       650
+      senior       0.66      0.32      0.43       152
+       young       0.77      0.69      0.73       205
+
+    accuracy                           0.77      1007
+   macro avg       0.74      0.63      0.66      1007
+weighted avg       0.76      0.77      0.75      1007
+
+Confusion Matrix:
+[[585  25  40]
+ [102  48   2]
+ [ 64   0 141]]
+
+
+_______________________________________________________________________________________________
+Model: Random Forest 
+Dataset: abalone_encoded_Zscore
+Time: 250 ms
+Scaling: np.sqrt
+Base model: n_estimators=100, random_state=42
+
+Model Performance
+Accuracy = 77.06%.
+Classification Report:
+              precision    recall  f1-score   support
+
+       adult       0.78      0.90      0.84       650
+      senior       0.68      0.32      0.43       152
+       young       0.77      0.69      0.73       205
+
+    accuracy                           0.77      1007
+   macro avg       0.74      0.64      0.66      1007
+weighted avg       0.76      0.77      0.75      1007
+
+Confusion Matrix:
+[[587  23  40]
+ [102  48   2]
+ [ 64   0 141]]
+
+
+_______________________________________________________________________________________________
+Model: Random Forest 
+Dataset: abalone_encoded_Zscore 
+Time: 10min 23s (Cross validation - RandomizedSearchCV)
+Scaling: np.sqrt
+
+Best random model: {'bootstrap': True,
+ 'ccp_alpha': 0.0,
+ 'class_weight': None,
+ 'criterion': 'gini',
+ 'max_depth': 70,
+ 'max_features': 'log2',
+ 'max_leaf_nodes': None,
+ 'max_samples': None,
+ 'min_impurity_decrease': 0.0,
+ 'min_samples_leaf': 4,
+ 'min_samples_split': 10,
+ 'min_weight_fraction_leaf': 0.0,
+ 'monotonic_cst': None,
+ 'n_estimators': 400,
+ 'n_jobs': None,
+ 'oob_score': False,
+ 'random_state': 42,
+ 'verbose': 0,
+ 'warm_start': False}
+Scaling: np.sqrt
+
+Model Performance
+Accuracy = 77.06%.
+Classification Report:
+              precision    recall  f1-score   support
+
+       adult       0.78      0.90      0.84       650
+      senior       0.64      0.30      0.41       152
+       young       0.78      0.71      0.74       205
+
+    accuracy                           0.77      1007
+   macro avg       0.73      0.64      0.66      1007
+weighted avg       0.76      0.77      0.75      1007
+
+Confusion Matrix:
+[[584  26  40]
+ [104  46   2]
+ [ 59   0 146]]
+Improvement of 0.00%.
