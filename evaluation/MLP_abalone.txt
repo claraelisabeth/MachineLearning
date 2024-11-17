@@ -1,0 +1,52 @@
+Multilayer Percepton  abalone_encoded
+Time: 
+Scaler: Standard Scaler
+
+Model Performance
+Accuracy = 77.49%.
+Classification Report:
+              precision    recall  f1-score   support
+
+       adult       0.79      0.87      0.83       661
+      senior       0.68      0.52      0.59       173
+       young       0.77      0.68      0.72       210
+
+    accuracy                           0.77      1044
+   macro avg       0.75      0.69      0.71      1044
+weighted avg       0.77      0.77      0.77      1044
+
+Confusion Matrix:
+[[577  42  42]
+ [ 83  90   0]
+ [ 68   0 142]]
+
+
+_______________________________________________________________________________________________
+
+Multilayer Percepton abalone_encoded_IQR
+Time: 41min 38s
+Scaler: Standard Scaler
+
+Model Performance
+Accuracy = 81.03%.
+Classification Report:
+              precision    recall  f1-score   support
+
+       adult       0.82      0.94      0.87       731
+      senior       0.00      0.00      0.00       108
+       young       0.78      0.78      0.78       205
+
+    accuracy                           0.81      1044
+   macro avg       0.53      0.57      0.55      1044
+weighted avg       0.73      0.81      0.77      1044
+
+Confusion Matrix:
+[[687   0  44]
+ [107   0   1]
+ [ 46   0 159]]
+_______________________________________________________________________________________________
+
+Multilayer Percepton abalone_encoded_Zscore
+Time: 
+Scaler: Standard Scaler
+

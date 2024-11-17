@@ -1,33 +1,31 @@
-Support Vector Machines abalone_encoded
-Time: 
-Scaler: Standarad Scaler
+Support Vector Machines abalone_encoded_IQR
+Time:  312 ms
+Scaler: Standard Scaler
 
-Best parameter:  {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'} 
-Best score for training data: 0.3069444444444444 
+Base model
 
 Model Performance
-Accuracy = 76.72%.
+Accuracy = 80.94%.
 Classification Report:
               precision    recall  f1-score   support
 
-       adult       0.77      0.90      0.83       661
-      senior       0.72      0.45      0.55       173
-       young       0.78      0.62      0.69       210
+       adult       0.81      0.94      0.87       731
+      senior       0.00      0.00      0.00       108
+       young       0.79      0.76      0.77       205
 
-    accuracy                           0.77      1044
-   macro avg       0.76      0.65      0.69      1044
-weighted avg       0.76      0.77      0.76      1044
+    accuracy                           0.81      1044
+   macro avg       0.53      0.57      0.55      1044
+weighted avg       0.73      0.81      0.76      1044
 
 Confusion Matrix:
-[[594  30  37]
- [ 96  77   0]
- [ 80   0 130]]
-
+[[690   0  41]
+ [108   0   0]
+ [ 50   0 155]]
 _______________________________________________________________________________________________
 
 Support Vector Machines abalone_encoded
-Time: 
-Scaler: Standarad Scaler
+Time: 47 min 27s
+Scaler: Standard Scaler
 
 Best parameter:  {'C': 1000, 'gamma': 0.001, 'kernel': 'rbf'} 
 Best score for training data: 0.3069444444444444 
@@ -53,79 +51,56 @@ Confusion Matrix:
 _______________________________________________________________________________________________
 
 Support Vector Machines abalone_encoded_IQR
-Time: 83m 4s
+Time: 54min 35s
+Scaler: Standard Scaler
 
-Best parameter:  {'C': 1, 'degree': 2, 'kernel': 'poly'} 
-Best score for training data: 0.27462487153134635 
-
-
-_______________________________________________________________________________________________
-
-Support Vector Machines df_gym_Z
-Time: 22m 21s
-
-Best parameter:  {'C': 1, 'kernel': 'linear'} 
-Best score for training data: 0.3069444444444444 
+Best parameter:  {'C': 10, 'gamma': 0.1, 'kernel': 'rbf'} 
+Best score for training data: 0.797504216539024 
 
 Model Performance
-Accuracy = 21.67%.
+Accuracy = 81.23%.
 Classification Report:
               precision    recall  f1-score   support
 
-           0       0.14      0.08      0.11        59
-           1       0.18      0.13      0.15        54
-           2       0.24      0.37      0.29        63
-           3       0.24      0.27      0.25        64
+       adult       0.81      0.95      0.88       731
+      senior       0.00      0.00      0.00       108
+       young       0.80      0.76      0.78       205
 
-    accuracy                           0.22       240
-   macro avg       0.20      0.21      0.20       240
-weighted avg       0.20      0.22      0.20       240
+    accuracy                           0.81      1044
+   macro avg       0.54      0.57      0.55      1044
+weighted avg       0.73      0.81      0.77      1044
 
 Confusion Matrix:
-[[ 5  9 24 21]
- [ 9  7 20 18]
- [ 9 15 23 16]
- [13  7 27 17]]
+[[693   0  38]
+ [108   0   0]
+ [ 50   0 155]]
+
+_______________________________________________________________________________________________
+
+Support Vector Machines abalone_encoded_Zscore
+Time: 6min 1s
+Scaler: Standard Scaler
+
+Best parameter:  {'C': 100, 'gamma': 0.1, 'kernel': 'rbf'} 
+Best score for training data: 0.7771523178807948 
+
 Model Performance
-Accuracy = 21.67%.
+Accuracy = 76.96%.
 Classification Report:
               precision    recall  f1-score   support
 
-           0       0.14      0.08      0.11        59
-           1       0.18      0.13      0.15        54
-           2       0.24      0.37      0.29        63
-           3       0.24      0.27      0.25        64
+       adult       0.78      0.90      0.84       650
+      senior       0.61      0.27      0.37       152
+       young       0.78      0.73      0.75       205
 
-    accuracy                           0.22       240
-   macro avg       0.20      0.21      0.20       240
-weighted avg       0.20      0.22      0.20       240
+    accuracy                           0.77      1007
+   macro avg       0.73      0.63      0.65      1007
+weighted avg       0.76      0.77      0.75      1007
 
 Confusion Matrix:
-[[ 5  9 24 21]
- [ 9  7 20 18]
- [ 9 15 23 16]
- [13  7 27 17]]
-Improvement of 0.00%.
+[[585  26  39]
+ [109  41   2]
+ [ 56   0 149]]
 
 
 
-_______________________________________________________________________________________________
-
-Support Vector Machines df_gym_selected
-Time:
-
-
-
-
-
-_______________________________________________________________________________________________
-
-Support Vector Machines df_gym_scaled
-Time:
-
-
-
-_______________________________________________________________________________________________
-
-Support Vector Machines df_gym_Z_scaled
-Time:
