@@ -1,6 +1,10 @@
 Random Forest df_gym
 Time: 58.6s
 
+Best parameter:  {'n_estimators': 1000, 'min_samples_split': 5, 'min_samples_leaf': 4, 'max_features': 'log2', 'max_depth': 100, 'bootstrap': True} 
+Best score for training data: 0.2761087267525036 
+
+
 Model Performance
 Accuracy = 24.59%.
 Classification Report:
@@ -40,6 +44,56 @@ Confusion Matrix:
  [14 13 13 24]
  [17  8 19 21]]
 Improvement of 8.33%.
+
+
+
+_______________________________________________________________________________________________
+
+Random Forest df_gym + StandardScaler
+Time: 1m 2s
+
+Best parameter:  {'n_estimators': 600, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 'sqrt', 'max_depth': 30, 'bootstrap': False} 
+Best score for training data: 0.2761087267525036 
+
+Model Performance
+Accuracy = 29.18%.
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.29      0.34      0.31        58
+           1       0.20      0.13      0.16        52
+           2       0.33      0.34      0.34        61
+           3       0.31      0.32      0.32        62
+
+    accuracy                           0.29       233
+   macro avg       0.28      0.29      0.28       233
+weighted avg       0.28      0.29      0.29       233
+
+Confusion Matrix:
+[[20  8 15 15]
+ [18  7 11 16]
+ [16 11 21 13]
+ [16  9 17 20]]
+Model Performance
+Accuracy = 26.18%.
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.29      0.31      0.30        58
+           1       0.24      0.17      0.20        52
+           2       0.25      0.25      0.25        61
+           3       0.26      0.31      0.28        62
+
+    accuracy                           0.26       233
+   macro avg       0.26      0.26      0.26       233
+weighted avg       0.26      0.26      0.26       233
+
+Confusion Matrix:
+[[18 10 14 16]
+ [16  9 15 12]
+ [12  8 15 26]
+ [17 10 16 19]]
+Improvement of -10.29%.
 
 
 
@@ -89,51 +143,103 @@ Confusion Matrix:
 Improvement of 10.00%.
 
 
+_______________________________________________________________________________________________
+
+Random Forest df_gym_IQR + StandardScaler
+Time: 1m 3s
+
+Best parameter:  {'n_estimators': 1400, 'min_samples_split': 2, 'min_samples_leaf': 2, 'max_features': 'log2', 'max_depth': 70, 'bootstrap': True} 
+Best score for training data: 0.27467811158798283
+
+Model Performance
+Accuracy = 24.89%.
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.25      0.31      0.27        58
+           1       0.23      0.17      0.20        52
+           2       0.24      0.25      0.24        61
+           3       0.28      0.26      0.27        62
+
+    accuracy                           0.25       233
+   macro avg       0.25      0.25      0.25       233
+weighted avg       0.25      0.25      0.25       233
+
+Confusion Matrix:
+[[18 12 18 10]
+ [18  9 15 10]
+ [16  9 15 21]
+ [21 10 15 16]]
+Model Performance
+Accuracy = 26.61%.
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.32      0.36      0.34        58
+           1       0.24      0.15      0.19        52
+           2       0.24      0.26      0.25        61
+           3       0.26      0.27      0.27        62
+
+    accuracy                           0.27       233
+   macro avg       0.26      0.26      0.26       233
+weighted avg       0.26      0.27      0.26       233
+
+Confusion Matrix:
+[[21  7 18 12]
+ [17  8 14 13]
+ [14  7 16 24]
+ [13 12 20 17]]
+Improvement of 6.90%.
+
+
 
 _______________________________________________________________________________________________
 
 Random Forest df_gym_Z
 Time: 54.4s
 
+Best parameter:  {'n_estimators': 400, 'min_samples_split': 2, 'min_samples_leaf': 4, 'max_features': 'sqrt', 'max_depth': 10, 'bootstrap': True} 
+Best score for training data: 0.2916666666666667
+
 Model Performance
-Accuracy = 22.92%.
+Accuracy = 23.33%.
 Classification Report:
               precision    recall  f1-score   support
 
            0       0.22      0.22      0.22        59
-           1       0.24      0.17      0.20        54
-           2       0.24      0.30      0.27        63
-           3       0.22      0.22      0.22        64
+           1       0.26      0.19      0.22        54
+           2       0.25      0.30      0.27        63
+           3       0.21      0.22      0.21        64
 
     accuracy                           0.23       240
-   macro avg       0.23      0.23      0.23       240
+   macro avg       0.24      0.23      0.23       240
 weighted avg       0.23      0.23      0.23       240
 
 Confusion Matrix:
-[[13  8 21 17]
- [10  9 23 12]
- [16  6 19 22]
+[[13  7 19 20]
+ [10 10 21 13]
+ [16  7 19 21]
  [19 14 17 14]]
 Model Performance
-Accuracy = 23.75%.
+Accuracy = 22.08%.
 Classification Report:
               precision    recall  f1-score   support
 
-           0       0.30      0.27      0.29        59
-           1       0.19      0.11      0.14        54
-           2       0.25      0.33      0.28        63
-           3       0.20      0.22      0.21        64
+           0       0.27      0.20      0.23        59
+           1       0.19      0.13      0.15        54
+           2       0.23      0.30      0.26        63
+           3       0.19      0.23      0.21        64
 
-    accuracy                           0.24       240
-   macro avg       0.23      0.23      0.23       240
-weighted avg       0.24      0.24      0.23       240
+    accuracy                           0.22       240
+   macro avg       0.22      0.22      0.22       240
+weighted avg       0.22      0.22      0.22       240
 
 Confusion Matrix:
-[[16  7 20 16]
- [ 7  6 21 20]
- [14  7 21 21]
- [16 11 23 14]]
-Improvement of 3.64%.
+[[12 10 18 19]
+ [ 5  7 22 20]
+ [13  8 19 23]
+ [15 12 22 15]]
+Improvement of -5.36%.
 
 
 
