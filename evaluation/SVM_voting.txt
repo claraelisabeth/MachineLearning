@@ -1,0 +1,87 @@
+Support Vector Machines df_voting_keep_unknown
+Time: 5s
+
+Best parameter:  {'C': 10, 'kernel': 'linear'} 
+
+Best score for training data: 0.9507575757575758 
+
+Model Performance
+Accuracy = 96.30%.
+Classification Report:
+              precision    recall  f1-score   support
+
+    democrat       0.94      1.00      0.97        31
+  republican       1.00      0.91      0.95        23
+
+    accuracy                           0.96        54
+   macro avg       0.97      0.96      0.96        54
+weighted avg       0.97      0.96      0.96        54
+
+Confusion Matrix:
+[[31  0]
+ [ 2 21]]
+
+_______________________________________________________________________________________________
+
+Support Vector Machines df_voting_impute_median_keep_outliers
+Time: 3s
+
+Best parameter:  {'C': 1, 'kernel': 'linear'} 
+
+Best score for training data: 0.9696969696969697 
+
+Model Performance
+Accuracy = 94.44%.
+Classification Report:
+              precision    recall  f1-score   support
+
+    democrat       0.94      0.97      0.95        31
+  republican       0.95      0.91      0.93        23
+
+    accuracy                           0.94        54
+   macro avg       0.95      0.94      0.94        54
+weighted avg       0.94      0.94      0.94        54
+
+Confusion Matrix:
+[[30  1]
+ [ 2 21]]
+
+_______________________________________________________________________________________________
+
+Support Vector Machines df_voting_impute_median_no_outliers
+Time: 3s
+
+Best parameter:  {'C': 1, 'kernel': 'linear'} 
+
+Best score for training data: 0.9696969696969697
+
+same as df_voting_impute_median_keep_outliers
+
+_______________________________________________________________________________________________
+
+Support Vector Machines df_voting_impute_mice
+Time: 3s
+
+Best parameter:  {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'} 
+
+Best score for training data: 0.9616935483870968 
+
+Model Performance
+Accuracy = 96.15%.
+Classification Report:
+              precision    recall  f1-score   support
+
+    democrat       0.97      0.97      0.97        29
+  republican       0.96      0.96      0.96        23
+
+    accuracy                           0.96        52
+   macro avg       0.96      0.96      0.96        52
+weighted avg       0.96      0.96      0.96        52
+
+Confusion Matrix:
+[[28  1]
+ [ 1 22]]
+
+ _______________________________________________________________________________________________
+
+Different Parameter Settings:

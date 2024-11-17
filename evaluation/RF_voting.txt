@@ -1,24 +1,84 @@
-RF df_gym
-Time: 1m 25s
+Random Forest df_voting
+Time: 1m 20s
 
-RandomForestClassifier(bootstrap=False, max_depth=70, max_features='log2',
-                       n_estimators=800)
+Best parameter:  {'n_estimators': 2000, 'min_samples_split': 10, 'min_samples_leaf': 2, 'max_features': 'log2', 'max_depth': 10, 'bootstrap': True} 
 
-Best parameter:  {'C': 1, 'gamma': 0.001, 'kernel': 'rbf'} 
-Best score for training data: 0.29355692017005197 
+Best score for training data: 0.9691358024691358 
 
 Model Performance
-Accuracy = 96.49%.
+Accuracy = 94.44%.
 Classification Report:
               precision    recall  f1-score   support
 
-           0       0.97      0.97      0.97        34
-           1       0.96      0.96      0.96        23
+    democrat       0.94      0.97      0.95        31
+  republican       0.95      0.91      0.93        23
 
-    accuracy                           0.96        57
-   macro avg       0.96      0.96      0.96        57
-weighted avg       0.96      0.96      0.96        57
+    accuracy                           0.94        54
+   macro avg       0.95      0.94      0.94        54
+weighted avg       0.94      0.94      0.94        54
 
 Confusion Matrix:
-[[33  1]
+[[30  1]
+ [ 2 21]]
+
+_______________________________________________________________________________________________
+
+Random Forest df_voting_keep_unknown
+Time: 1m 16s
+
+Best parameter:  {'n_estimators': 200, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 'log2', 'max_depth': 110, 'bootstrap': False} 
+
+Best score for training data: 0.9753086419753086
+
+same as df_voting
+
+_______________________________________________________________________________________________
+
+Random Forest df_voting_impute_median_keep_outliers
+Time: 1m 35s
+
+Best parameter:  {'n_estimators': 200, 'min_samples_split': 2, 'min_samples_leaf': 1, 'max_features': 'log2', 'max_depth': 20, 'bootstrap': True} 
+
+Best score for training data: 0.9753086419753086 
+
+same as df_voting
+
+_______________________________________________________________________________________________
+
+Random Forest df_voting_impute_median_no_outliers
+Time: 1m 16s
+
+same as df_voting
+
+_______________________________________________________________________________________________
+
+Best parameter:  {'n_estimators': 2000, 'min_samples_split': 10, 'min_samples_leaf': 2, 'max_features': 'log2', 'max_depth': 10, 'bootstrap': True} 
+
+Best score for training data: 0.9691358024691358
+
+Random Forest df_voting_impute_mice
+Time: 9m 28s
+
+Best parameter:  {'bootstrap': False, 'max_depth': 60, 'max_features': 'log2', 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200} 
+
+Best score for training data: 0.9617803580067731 
+
+Model Performance
+Accuracy = 96.15%.
+Classification Report:
+              precision    recall  f1-score   support
+
+    democrat       0.97      0.97      0.97        29
+  republican       0.96      0.96      0.96        23
+
+    accuracy                           0.96        52
+   macro avg       0.96      0.96      0.96        52
+weighted avg       0.96      0.96      0.96        52
+
+Confusion Matrix:
+[[28  1]
  [ 1 22]]
+
+_______________________________________________________________________________________________
+
+Different Parameter Settings:

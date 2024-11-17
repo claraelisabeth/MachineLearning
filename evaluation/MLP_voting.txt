@@ -1,0 +1,87 @@
+Multilayer Percepton df_voting_keep_unknown
+Time: 13s
+
+Best parameter:  {'solver': 'adam', 'max_iter': 2000, 'learning_rate': 'constant', 'hidden_layer_sizes': (50, 100, 50), 'alpha': 0.5, 'activation': 'tanh'} 
+
+Best score for training data: 0.95679012345679 
+
+Model Performance
+Accuracy = 92.59%.
+Classification Report:
+              precision    recall  f1-score   support
+
+    democrat       0.94      0.94      0.94        31
+  republican       0.91      0.91      0.91        23
+
+    accuracy                           0.93        54
+   macro avg       0.92      0.92      0.92        54
+weighted avg       0.93      0.93      0.93        54
+
+Confusion Matrix:
+[[29  2]
+ [ 2 21]]
+
+_______________________________________________________________________________________________
+
+Multilayer Percepton df_voting_impute_median_keep_outliers
+Time: 12s
+
+Best parameter:  {'solver': 'adam', 'max_iter': 2500, 'learning_rate': 'constant', 'hidden_layer_sizes': (100,), 'alpha': 0.5, 'activation': 'logistic'} 
+
+Best score for training data: 0.9629629629629629 
+
+Model Performance
+Accuracy = 94.44%.
+Classification Report:
+              precision    recall  f1-score   support
+
+    democrat       0.94      0.97      0.95        31
+  republican       0.95      0.91      0.93        23
+
+    accuracy                           0.94        54
+   macro avg       0.95      0.94      0.94        54
+weighted avg       0.94      0.94      0.94        54
+
+Confusion Matrix:
+[[30  1]
+ [ 2 21]]
+
+_______________________________________________________________________________________________
+
+Multilayer Percepton df_voting_impute_median_no_outliers
+Time: 11s
+
+Best parameter:  {'solver': 'adam', 'max_iter': 2500, 'learning_rate': 'constant', 'hidden_layer_sizes': (100,), 'alpha': 0.5, 'activation': 'logistic'} 
+
+Best score for training data: 0.9629629629629629 
+
+same as df_voting_impute_median_keep_outliers
+
+_______________________________________________________________________________________________
+
+Multilayer Percepton df_voting_impute_mice
+Time: 4m 53s
+
+Best parameter:  {'activation': 'tanh', 'alpha': 0.5, 'hidden_layer_sizes': (10, 30, 30, 50), 'learning_rate': 'constant', 'max_iter': 2000, 'solver': 'adam'}
+
+Best score for training data: 0.9818181818181818 
+
+Model Performance
+Accuracy = 98.25%.
+Classification Report:
+              precision    recall  f1-score   support
+
+    democrat       0.97      1.00      0.99        34
+  republican       1.00      0.96      0.98        23
+
+    accuracy                           0.98        57
+   macro avg       0.99      0.98      0.98        57
+weighted avg       0.98      0.98      0.98        57
+
+Confusion Matrix:
+[[34  0]
+ [ 1 22]]
+
+_______________________________________________________________________________________________
+
+Different Parameter Settings:

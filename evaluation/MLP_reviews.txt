@@ -1,0 +1,227 @@
+Support Vector Machines df_reviews
+Time: 90m 15s
+
+Model Performance
+Accuracy = 62.23%.
+Classification Report:
+              precision    recall  f1-score   support
+
+     Agresti       0.67      0.50      0.57         4
+   Ashbacher       1.00      0.67      0.80         3
+       Auken       1.00      1.00      1.00         3
+ Blankenship       0.75      0.75      0.75         4
+       Brody       1.00      1.00      1.00         4
+       Brown       0.50      0.25      0.33         4
+    Bukowsky       0.50      0.25      0.33         4
+         CFH       0.60      0.75      0.67         4
+   Calvinnme       1.00      0.50      0.67         4
+     Chachra       0.56      1.00      0.71         5
+    Chandler       0.40      0.50      0.44         4
+       Chell       0.57      0.80      0.67         5
+    Cholette       1.00      0.50      0.67         4
+      Comdet       0.50      0.60      0.55         5
+        Corn       1.00      0.75      0.86         4
+       Cutey       0.75      0.75      0.75         4
+    Davisson       1.00      0.60      0.75         5
+        Dent       1.00      0.33      0.50         3
+    Engineer       1.00      1.00      1.00         3
+      Goonan       1.00      1.00      1.00         4
+       Grove       0.00      0.00      0.00         4
+        Harp       0.40      0.50      0.44         4
+       Hayes       0.57      1.00      0.73         4
+      Janson       0.60      0.75      0.67         4
+     Johnson       1.00      1.00      1.00         3
+      Koenig       1.00      0.33      0.50         3
+       Kolln       0.67      0.67      0.67         3
+   Lawyeraau       1.00      0.33      0.50         3
+         Lee       1.00      0.50      0.67         4
+      Lovitt       0.00      0.00      0.00         2
+  Mahlers2nd       0.50      0.25      0.33         4
+        Mark       0.67      0.67      0.67         3
+       McKee       0.33      0.33      0.33         3
+     Merritt       0.56      1.00      0.71         5
+     Messick       0.67      0.50      0.57         4
+    Mitchell       0.50      0.33      0.40         3
+    Morrison       0.67      0.67      0.67         3
+        Neal       0.40      0.50      0.44         4
+       Nigam       0.00      0.00      0.00         3
+    Peterson       1.00      0.33      0.50         3
+       Power       0.62      1.00      0.77         5
+       Riley       0.40      0.50      0.44         4
+      Robert       1.00      0.67      0.80         3
+        Shea       0.50      0.75      0.60         4
+     Sherwin       0.67      0.80      0.73         5
+      Taylor       1.00      1.00      1.00         3
+      Vernon       1.00      0.75      0.86         4
+      Vision       0.20      0.33      0.25         3
+     Walters       0.50      0.33      0.40         3
+      Wilson       0.40      0.80      0.53         5
+
+    accuracy                           0.62       188
+   macro avg       0.67      0.60      0.60       188
+weighted avg       0.67      0.62      0.61       188
+
+Confusion Matrix:
+[[2 0 0 ... 0 0 0]
+ [0 2 0 ... 0 0 0]
+ [0 0 3 ... 0 0 0]
+ ...
+ [0 0 0 ... 1 0 0]
+ [0 0 0 ... 0 1 0]
+ [0 0 0 ... 0 0 4]]
+
+___________________________________________________________________________________________
+
+Support Vector Machines df_rev_rfe
+Time: 1m 18s
+
+Best parameter:  {'solver': 'adam', 'max_iter': 2000, 'learning_rate': 'constant', 'hidden_layer_sizes': (100,), 'alpha': 0.05, 'activation': 'relu'} 
+
+Best score for training data: 0.4163917017483976 
+
+Model Performance
+Accuracy = 54.79%.
+Classification Report:
+              precision    recall  f1-score   support
+
+     Agresti       1.00      0.50      0.67         4
+   Ashbacher       0.40      0.67      0.50         3
+       Auken       0.75      1.00      0.86         3
+ Blankenship       0.33      0.25      0.29         4
+       Brody       0.27      0.75      0.40         4
+       Brown       0.67      0.50      0.57         4
+    Bukowsky       0.50      0.50      0.50         4
+         CFH       0.50      0.25      0.33         4
+   Calvinnme       0.33      0.25      0.29         4
+     Chachra       1.00      1.00      1.00         5
+    Chandler       0.67      0.50      0.57         4
+       Chell       0.50      0.60      0.55         5
+    Cholette       0.50      0.25      0.33         4
+      Comdet       0.25      0.20      0.22         5
+        Corn       0.29      0.50      0.36         4
+       Cutey       0.75      0.75      0.75         4
+    Davisson       0.57      0.80      0.67         5
+        Dent       1.00      1.00      1.00         3
+    Engineer       0.75      1.00      0.86         3
+      Goonan       1.00      0.75      0.86         4
+       Grove       0.40      0.50      0.44         4
+        Harp       1.00      1.00      1.00         4
+       Hayes       0.50      0.75      0.60         4
+      Janson       1.00      0.50      0.67         4
+     Johnson       0.60      1.00      0.75         3
+      Koenig       0.00      0.00      0.00         3
+       Kolln       0.50      0.33      0.40         3
+   Lawyeraau       1.00      1.00      1.00         3
+         Lee       0.25      0.50      0.33         4
+      Lovitt       1.00      0.00      0.00         2
+  Mahlers2nd       0.00      0.00      0.00         4
+        Mark       0.50      0.33      0.40         3
+       McKee       1.00      0.67      0.80         3
+     Merritt       0.71      1.00      0.83         5
+     Messick       0.50      0.75      0.60         4
+    Mitchell       0.00      0.00      0.00         3
+    Morrison       0.50      0.33      0.40         3
+        Neal       0.50      0.25      0.33         4
+       Nigam       0.50      0.33      0.40         3
+    Peterson       1.00      1.00      1.00         3
+       Power       0.80      0.80      0.80         5
+       Riley       1.00      0.75      0.86         4
+      Robert       0.40      0.67      0.50         3
+        Shea       0.00      0.00      0.00         4
+     Sherwin       1.00      0.80      0.89         5
+      Taylor       1.00      0.67      0.80         3
+      Vernon       0.50      0.25      0.33         4
+      Vision       0.00      0.00      0.00         3
+     Walters       0.33      0.33      0.33         3
+      Wilson       0.29      0.40      0.33         5
+
+    accuracy                           0.55       188
+   macro avg       0.58      0.54      0.53       188
+weighted avg       0.58      0.55      0.54       188
+
+Confusion Matrix:
+[[2 0 0 ... 0 0 0]
+ [0 2 0 ... 0 0 0]
+ [0 0 3 ... 0 0 0]
+ ...
+ [0 1 0 ... 0 0 0]
+ [0 0 0 ... 0 1 0]
+ [0 0 0 ... 0 0 2]]
+
+___________________________________________________________________________________________
+
+Support Vector Machines df_rev_k
+Time: 1m 38s
+
+Best parameter:  {'solver': 'adam', 'max_iter': 2500, 'learning_rate': 'constant', 'hidden_layer_sizes': (100,), 'alpha': 0.0001, 'activation': 'tanh'} 
+
+Best score for training data: 0.49290780141843965 
+
+Model Performance
+Accuracy = 59.57%.
+Classification Report:
+              precision    recall  f1-score   support
+
+     Agresti       1.00      0.50      0.67         4
+   Ashbacher       0.50      0.67      0.57         3
+       Auken       0.50      0.33      0.40         3
+ Blankenship       1.00      1.00      1.00         4
+       Brody       0.75      0.75      0.75         4
+       Brown       0.67      0.50      0.57         4
+    Bukowsky       1.00      0.50      0.67         4
+         CFH       1.00      0.50      0.67         4
+   Calvinnme       1.00      0.75      0.86         4
+     Chachra       0.83      1.00      0.91         5
+    Chandler       0.50      0.75      0.60         4
+       Chell       0.40      0.40      0.40         5
+    Cholette       0.33      0.25      0.29         4
+      Comdet       0.57      0.80      0.67         5
+        Corn       0.33      0.50      0.40         4
+       Cutey       0.67      0.50      0.57         4
+    Davisson       0.50      0.60      0.55         5
+        Dent       0.75      1.00      0.86         3
+    Engineer       1.00      1.00      1.00         3
+      Goonan       0.50      0.75      0.60         4
+       Grove       0.50      0.50      0.50         4
+        Harp       1.00      0.75      0.86         4
+       Hayes       0.80      1.00      0.89         4
+      Janson       0.29      0.50      0.36         4
+     Johnson       0.67      0.67      0.67         3
+      Koenig       0.00      0.00      0.00         3
+       Kolln       0.40      0.67      0.50         3
+   Lawyeraau       0.33      0.33      0.33         3
+         Lee       0.33      0.25      0.29         4
+      Lovitt       0.00      0.00      0.00         2
+  Mahlers2nd       0.33      0.25      0.29         4
+        Mark       1.00      1.00      1.00         3
+       McKee       0.50      0.33      0.40         3
+     Merritt       0.80      0.80      0.80         5
+     Messick       0.40      0.50      0.44         4
+    Mitchell       0.33      0.33      0.33         3
+    Morrison       1.00      0.33      0.50         3
+        Neal       0.33      0.25      0.29         4
+       Nigam       0.67      0.67      0.67         3
+    Peterson       0.50      0.33      0.40         3
+       Power       0.80      0.80      0.80         5
+       Riley       0.60      0.75      0.67         4
+      Robert       0.50      0.33      0.40         3
+        Shea       0.67      0.50      0.57         4
+     Sherwin       0.80      0.80      0.80         5
+      Taylor       0.75      1.00      0.86         3
+      Vernon       0.57      1.00      0.73         4
+      Vision       0.00      0.00      0.00         3
+     Walters       0.50      0.67      0.57         3
+      Wilson       0.75      0.60      0.67         5
+
+    accuracy                           0.60       188
+   macro avg       0.60      0.58      0.57       188
+weighted avg       0.61      0.60      0.59       188
+
+Confusion Matrix:
+[[2 0 0 ... 0 0 0]
+ [0 2 0 ... 0 0 0]
+ [0 0 1 ... 0 0 0]
+ ...
+ [0 0 0 ... 0 0 0]
+ [0 0 0 ... 0 2 0]
+ [0 0 0 ... 0 0 3]]
