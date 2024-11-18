@@ -85,3 +85,7 @@ Confusion Matrix:
 _______________________________________________________________________________________________
 
 Different Parameter Settings:
+
+MLPClassifier(activation='tanh', alpha=0.05, hidden_layer_sizes=(20, 25, 50, 50), max_iter=3000)
+
+MLPClassifier(activation='tanh', alpha=0.5, hidden_layer_sizes=(10, 30, 30, 50), learning_rate='constant', max_iter=2000, solver='adam')

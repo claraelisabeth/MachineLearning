@@ -48,37 +48,100 @@ ________________________________________________________________________________
 Random Forest df_voting_impute_median_no_outliers
 Time: 1m 16s
 
-same as df_voting
-
-_______________________________________________________________________________________________
-
 Best parameter:  {'n_estimators': 2000, 'min_samples_split': 10, 'min_samples_leaf': 2, 'max_features': 'log2', 'max_depth': 10, 'bootstrap': True} 
 
 Best score for training data: 0.9691358024691358
 
+same as df_voting
+
+_______________________________________________________________________________________________
+
 Random Forest df_voting_impute_mice
 Time: 9m 28s
 
-Best parameter:  {'bootstrap': False, 'max_depth': 60, 'max_features': 'log2', 'min_samples_leaf': 2, 'min_samples_split': 5, 'n_estimators': 200} 
+Best parameter:  {'bootstrap': True, 'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 10, 'n_estimators': 200} 
 
-Best score for training data: 0.9617803580067731 
+Best score for training data: 0.9753086419753086 
 
 Model Performance
-Accuracy = 96.15%.
+Accuracy = 98.15%.
 Classification Report:
               precision    recall  f1-score   support
 
-    democrat       0.97      0.97      0.97        29
-  republican       0.96      0.96      0.96        23
+         0.0       1.00      0.97      0.98        32
+         1.0       0.96      1.00      0.98        22
 
-    accuracy                           0.96        52
-   macro avg       0.96      0.96      0.96        52
-weighted avg       0.96      0.96      0.96        52
+    accuracy                           0.98        54
+   macro avg       0.98      0.98      0.98        54
+weighted avg       0.98      0.98      0.98        54
 
 Confusion Matrix:
-[[28  1]
- [ 1 22]]
+[[31  1]
+ [ 0 22]]
 
 _______________________________________________________________________________________________
 
 Different Parameter Settings:
+
+RandomForestClassifier(n_estimators = 1000, max_features = 'log2', max_depth = 500, min_samples_split = 200, min_samples_leaf = 200, bootstrap = False)
+
+Model Performance
+Accuracy = 59.26%.
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0       0.59      1.00      0.74        32
+         1.0       1.00      0.00      0.00        22
+
+    accuracy                           0.59        54
+   macro avg       0.80      0.50      0.37        54
+weighted avg       0.76      0.59      0.44        54
+
+Confusion Matrix:
+[[32  0]
+ [22  0]]
+
+_______________________________________________________________________________________________
+
+RandomForestClassifier(n_estimators = 800, max_features = 'sqrt', max_depth = 65, min_samples_leaf = 30, bootstrap = True, criterion='log_loss')
+
+Model Performance
+Accuracy = 94.44%.
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0       1.00      0.91      0.95        32
+         1.0       0.88      1.00      0.94        22
+
+    accuracy                           0.94        54
+   macro avg       0.94      0.95      0.94        54
+weighted avg       0.95      0.94      0.94        54
+
+Confusion Matrix:
+[[29  3]
+ [ 0 22]]
+
+Improvement of 59.38%.
+
+_______________________________________________________________________________________________
+
+Best parameter:  {'bootstrap': True, 'max_depth': 10, 'max_features': 'sqrt', 'min_samples_leaf': 1, 'min_samples_split': 10, 'n_estimators': 200} 
+
+Model Performance
+Accuracy = 98.15%.
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0       1.00      0.97      0.98        32
+         1.0       0.96      1.00      0.98        22
+
+    accuracy                           0.98        54
+   macro avg       0.98      0.98      0.98        54
+weighted avg       0.98      0.98      0.98        54
+
+Confusion Matrix:
+[[31  1]
+ [ 0 22]]
+
+Improvement of 3.92%.
+

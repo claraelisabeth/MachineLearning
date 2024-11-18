@@ -64,24 +64,82 @@ Time: 3s
 
 Best parameter:  {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'} 
 
-Best score for training data: 0.9616935483870968 
+Best score for training data: 0.9566287878787879 
 
 Model Performance
-Accuracy = 96.15%.
+Accuracy = 98.15%.
 Classification Report:
               precision    recall  f1-score   support
 
-    democrat       0.97      0.97      0.97        29
-  republican       0.96      0.96      0.96        23
+         0.0       1.00      0.97      0.98        32
+         1.0       0.96      1.00      0.98        22
 
-    accuracy                           0.96        52
-   macro avg       0.96      0.96      0.96        52
-weighted avg       0.96      0.96      0.96        52
+    accuracy                           0.98        54
+   macro avg       0.98      0.98      0.98        54
+weighted avg       0.98      0.98      0.98        54
 
 Confusion Matrix:
-[[28  1]
- [ 1 22]]
+[[31  1]
+ [ 0 22]]
 
  _______________________________________________________________________________________________
 
 Different Parameter Settings:
+
+SVC(C=1000, gamma=0.001, kernel='rbf')
+
+Model Performance
+Accuracy = 93.22%.
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0       0.94      0.94      0.94        35
+         1.0       0.92      0.92      0.92        24
+
+    accuracy                           0.93        59
+   macro avg       0.93      0.93      0.93        59
+weighted avg       0.93      0.93      0.93        59
+
+Confusion Matrix:
+[[33  2]
+ [ 2 22]]
+
+SVC(C=1000, kernel='linear', probability=True, random_state=42)
+
+Model Performance
+Accuracy = 91.53%.
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0       0.94      0.91      0.93        35
+         1.0       0.88      0.92      0.90        24
+
+    accuracy                           0.92        59
+   macro avg       0.91      0.92      0.91        59
+weighted avg       0.92      0.92      0.92        59
+
+Confusion Matrix:
+[[32  3]
+ [ 2 22]]
+
+Improvement of -1.82%.
+
+Best parameter:  {'C': 100, 'gamma': 0.001, 'kernel': 'rbf'} 
+
+Model Performance
+Accuracy = 96.61%.
+Classification Report:
+              precision    recall  f1-score   support
+
+         0.0       0.97      0.97      0.97        35
+         1.0       0.96      0.96      0.96        24
+
+    accuracy                           0.97        59
+   macro avg       0.96      0.96      0.96        59
+weighted avg       0.97      0.97      0.97        59
+
+Confusion Matrix:
+[[34  1]
+ [ 1 23]]
+
+Improvement of 5.56%.
