@@ -1,86 +1,74 @@
 Multilayer Percepton df_voting_keep_unknown
-Time: 13s
+Time: 24s
 
-Best parameter:  {'solver': 'adam', 'max_iter': 2000, 'learning_rate': 'constant', 'hidden_layer_sizes': (50, 100, 50), 'alpha': 0.5, 'activation': 'tanh'} 
+Best parameter:  {'solver': 'sgd', 'max_iter': 5000, 'learning_rate': 'constant', 'hidden_layer_sizes': (50, 100, 50), 'alpha': 0.5, 'activation': 'relu'} 
 
-Best score for training data: 0.95679012345679 
-
-Model Performance
-Accuracy = 92.59%.
-Classification Report:
-              precision    recall  f1-score   support
-
-    democrat       0.94      0.94      0.94        31
-  republican       0.91      0.91      0.91        23
-
-    accuracy                           0.93        54
-   macro avg       0.92      0.92      0.92        54
-weighted avg       0.93      0.93      0.93        54
-
-Confusion Matrix:
-[[29  2]
- [ 2 21]]
-
-_______________________________________________________________________________________________
-
-Multilayer Percepton df_voting_impute_median_keep_outliers
-Time: 12s
-
-Best parameter:  {'solver': 'adam', 'max_iter': 2500, 'learning_rate': 'constant', 'hidden_layer_sizes': (100,), 'alpha': 0.5, 'activation': 'logistic'} 
-
-Best score for training data: 0.9629629629629629 
+Best score for training data: 0.9691358024691358 
 
 Model Performance
 Accuracy = 94.44%.
 Classification Report:
               precision    recall  f1-score   support
 
-    democrat       0.94      0.97      0.95        31
-  republican       0.95      0.91      0.93        23
+    democrat       0.97      0.94      0.95        32
+  republican       0.91      0.95      0.93        22
+
+    accuracy                           0.94        54
+   macro avg       0.94      0.95      0.94        54
+...
+Confusion Matrix:
+[[30  2]
+ [ 1 21]]
+
+_______________________________________________________________________________________________
+
+Multilayer Percepton df_voting_impute_median_keep_outliers
+Time: 28s
+
+Best parameter:  {'solver': 'sgd', 'max_iter': 2000, 'learning_rate': 'adaptive', 'hidden_layer_sizes': (10, 20, 20, 25), 'alpha': 0.05, 'activation': 'tanh'} 
+
+Best score for training data: 0.9691358024691358 
+
+Model Performance
+Accuracy = 98.15%.
+Classification Report:
+              precision    recall  f1-score   support
+
+    democrat       1.00      0.97      0.98        32
+  republican       0.96      1.00      0.98        22
+
+    accuracy                           0.98        54
+   macro avg       0.98      0.98      0.98        54
+weighted avg       0.98      0.98      0.98        54
+
+Confusion Matrix:
+[[31  1]
+ [ 0 22]]
+
+_______________________________________________________________________________________________
+
+Multilayer Percepton df_voting_impute_mice
+Time: 22s
+
+Best parameter:  {'solver': 'adam', 'max_iter': 7000, 'learning_rate': 'adaptive', 'hidden_layer_sizes': (100,), 'alpha': 0.5, 'activation': 'tanh'} 
+
+Best score for training data: 0.9753086419753086 
+
+Model Performance
+Accuracy = 94.44%.
+Classification Report:
+              precision    recall  f1-score   support
+
+    democrat       0.96      0.92      0.94        26
+  republican       0.93      0.96      0.95        28
 
     accuracy                           0.94        54
    macro avg       0.95      0.94      0.94        54
 weighted avg       0.94      0.94      0.94        54
 
 Confusion Matrix:
-[[30  1]
- [ 2 21]]
-
-_______________________________________________________________________________________________
-
-Multilayer Percepton df_voting_impute_median_no_outliers
-Time: 11s
-
-Best parameter:  {'solver': 'adam', 'max_iter': 2500, 'learning_rate': 'constant', 'hidden_layer_sizes': (100,), 'alpha': 0.5, 'activation': 'logistic'} 
-
-Best score for training data: 0.9629629629629629 
-
-same as df_voting_impute_median_keep_outliers
-
-_______________________________________________________________________________________________
-
-Multilayer Percepton df_voting_impute_mice
-Time: 4m 53s
-
-Best parameter:  {'activation': 'tanh', 'alpha': 0.5, 'hidden_layer_sizes': (10, 30, 30, 50), 'learning_rate': 'constant', 'max_iter': 2000, 'solver': 'adam'}
-
-Best score for training data: 0.9818181818181818 
-
-Model Performance
-Accuracy = 98.25%.
-Classification Report:
-              precision    recall  f1-score   support
-
-    democrat       0.97      1.00      0.99        34
-  republican       1.00      0.96      0.98        23
-
-    accuracy                           0.98        57
-   macro avg       0.99      0.98      0.98        57
-weighted avg       0.98      0.98      0.98        57
-
-Confusion Matrix:
-[[34  0]
- [ 1 22]]
+[[24  2]
+ [ 1 27]]
 
 _______________________________________________________________________________________________
 
@@ -88,4 +76,38 @@ Different Parameter Settings:
 
 MLPClassifier(activation='tanh', alpha=0.05, hidden_layer_sizes=(20, 25, 50, 50), max_iter=3000)
 
+Model Performance
+Accuracy = 94.44%.
+Classification Report:
+              precision    recall  f1-score   support
+
+    democrat       0.96      0.92      0.94        26
+  republican       0.93      0.96      0.95        28
+
+    accuracy                           0.94        54
+   macro avg       0.95      0.94      0.94        54
+weighted avg       0.94      0.94      0.94        54
+
+Confusion Matrix:
+[[24  2]
+ [ 1 27]]
+0.9444444444444444
+
 MLPClassifier(activation='tanh', alpha=0.5, hidden_layer_sizes=(10, 30, 30, 50), learning_rate='constant', max_iter=2000, solver='adam')
+
+Model Performance
+Accuracy = 94.44%.
+Classification Report:
+              precision    recall  f1-score   support
+
+    democrat       0.96      0.92      0.94        26
+  republican       0.93      0.96      0.95        28
+
+    accuracy                           0.94        54
+   macro avg       0.95      0.94      0.94        54
+weighted avg       0.94      0.94      0.94        54
+
+Confusion Matrix:
+[[24  2]
+ [ 1 27]]
+0.9444444444444444

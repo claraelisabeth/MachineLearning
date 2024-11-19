@@ -1,0 +1,114 @@
+K-Fold CV Results:
+Random Forest: Mean Accuracy = 0.9584
+              precision    recall  f1-score   support
+
+           0       0.97      0.95      0.96       126
+           1       0.93      0.96      0.95        90
+
+    accuracy                           0.95       216
+   macro avg       0.95      0.95      0.95       216
+weighted avg       0.95      0.95      0.95       216
+
+SVM: Mean Accuracy = 0.8469
+              precision    recall  f1-score   support
+
+           0       0.86      0.88      0.87       126
+           1       0.83      0.80      0.81        90
+
+    accuracy                           0.85       216
+   macro avg       0.84      0.84      0.84       216
+weighted avg       0.85      0.85      0.85       216
+
+MLP: Mean Accuracy = 0.9081
+              precision    recall  f1-score   support
+
+           0       0.88      0.95      0.92       126
+           1       0.93      0.82      0.87        90
+
+    accuracy                           0.90       216
+   macro avg       0.90      0.89      0.89       216
+weighted avg       0.90      0.90      0.90       216
+
+
+StratifiedKFold Results:
+Random Forest: Mean Accuracy = 0.9584
+              precision    recall  f1-score   support
+
+           0       0.98      0.95      0.96       126
+           1       0.94      0.97      0.95        90
+
+    accuracy                           0.96       216
+   macro avg       0.96      0.96      0.96       216
+weighted avg       0.96      0.96      0.96       216
+
+SVM: Mean Accuracy = 0.8796
+              precision    recall  f1-score   support
+
+           0       0.88      0.92      0.90       126
+           1       0.88      0.82      0.85        90
+
+    accuracy                           0.88       216
+   macro avg       0.88      0.87      0.87       216
+weighted avg       0.88      0.88      0.88       216
+
+MLP: Mean Accuracy = 0.9397
+              precision    recall  f1-score   support
+
+           0       0.90      0.97      0.93       126
+           1       0.95      0.86      0.90        90
+
+    accuracy                           0.92       216
+   macro avg       0.93      0.91      0.92       216
+weighted avg       0.92      0.92      0.92       216
+
+Random Forest
+{'fit_time': array([0.24171495, 0.22774076, 0.245332  , 0.24330521, 0.22512889]), 'score_time': array([0.02621603, 0.02517343, 0.02362704, 0.02541685, 0.02207208]), 'test_score': array([0.97727273, 0.95348837, 0.97674419, 0.97674419, 0.95348837])}
+Accuracy Score:
+0.9675925925925926
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.98      0.96      0.97       126
+           1       0.95      0.98      0.96        90
+
+    accuracy                           0.97       216
+   macro avg       0.96      0.97      0.97       216
+weighted avg       0.97      0.97      0.97       216
+
+Confusion Matrix:
+[[121   5]
+ [  2  88]]
+SVM
+{'fit_time': array([0.1571331 , 0.15619564, 0.17177105, 0.16994786, 0.15148592]), 'score_time': array([0.02056694, 0.02257824, 0.02034688, 0.02210522, 0.01911306]), 'test_score': array([0.97727273, 0.88372093, 1.        , 0.95348837, 0.93023256])}
+Accuracy Score:
+0.9490740740740741
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.98      0.93      0.96       126
+           1       0.91      0.98      0.94        90
+
+    accuracy                           0.95       216
+   macro avg       0.95      0.95      0.95       216
+weighted avg       0.95      0.95      0.95       216
+
+Confusion Matrix:
+[[117   9]
+ [  2  88]]
+MLP
+{'fit_time': array([0.64814901, 0.66746974, 0.81226707, 0.68752789, 0.8913641 ]), 'score_time': array([0.02195287, 0.02410388, 0.02509069, 0.02560496, 0.02048492]), 'test_score': array([0.97727273, 0.95348837, 0.97674419, 0.97674419, 0.95348837])}
+Accuracy Score:
+0.9583333333333334
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.99      0.94      0.96       126
+           1       0.92      0.99      0.95        90
+
+    accuracy                           0.96       216
+   macro avg       0.95      0.96      0.96       216
+weighted avg       0.96      0.96      0.96       216
+
+Confusion Matrix:
+[[118   8]
+ [  1  89]]
