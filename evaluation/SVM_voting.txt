@@ -29,9 +29,6 @@ Best parameter:  {'C': 10, 'degree': 3, 'kernel': 'poly'}
 
 Best score for training data: 0.9628787878787879 
 
-Confusion Matrix:
-[[32  0]
- [ 0 22]]
 Model Performance
 Accuracy = 96.30%.
 Classification Report:
