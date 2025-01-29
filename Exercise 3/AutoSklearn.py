@@ -15,11 +15,11 @@ iris = datasets.load_iris()
 iris_data = pd.DataFrame(data= np.c_[iris['data'], iris['target']], columns= iris['feature_names'] + ['target'])
 iris_data['target'] = iris_data['target'].map({0: 'setosa', 1: 'versicolor', 2: 'virginica'})
 
-df_voting = pd.read_csv('data/CongressionalVotingID.shuf.lrn.csv')
+df_voting = pd.read_csv('/CongressionalVotingID.shuf.lrn.csv')
 
-df_airfoil = pd.read_csv("data/airfoil_noise_data.csv")
+df_airfoil = pd.read_csv("/airfoil_noise_data.csv")
 
-url='./data/abalone.csv'
+url='/abalone.csv'
 column_names = ["Sex", "Length", "Diameter", "Height", "Whole_weight", "Shucked_weight", "Viscera_weight", "Shell_weight", "Rings"]
 df_abalone = pd.read_csv(url, header=0, names=column_names)
 df_abalone = df_abalone[df_abalone.Height != 0]
