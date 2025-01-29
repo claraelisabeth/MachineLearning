@@ -1,5 +1,5 @@
-import autosklearn.classification
-import autosklearn.regression
+from autosklearn.classification import AutoSklearnClassifier
+from autosklearn.regression import AutoSklearnRegressor
 
 from sklearn.experimental import enable_iterative_imputer 
 from sklearn.impute import IterativeImputer
@@ -30,7 +30,7 @@ y_iris = iris_data['target']
 X_train_iris, X_temp, y_train_iris, y_temp = train_test_split(X_iris, y_iris, test_size=0.6, random_state=42)
 X_val_iris, X_test_iris, y_val_iris, y_test_iris = train_test_split(X_temp, y_temp, test_size=0.5, random_state=42)
 
-cls = autosklearn.classification.AutoSklearnClassifier()
+cls = AutoSklearnClassifier()
 cls.fit(X_train_iris, y_train_iris)
 predictions = cls.predict(X_test_iris)
 
@@ -68,7 +68,7 @@ y_airfoil = df_airfoil['y']
 X_train_airfoil, X_temp, y_train_airfoil, y_temp = train_test_split(X_airfoil, y_airfoil, test_size=0.6, random_state=42)
 X_val_airfoil, X_test_airfoil, y_val_airfoil, y_test_airfoil = train_test_split(X_temp, y_temp, test_size=0.5, random_state=42)
 
-reg = autosklearn.regression.AutoSklearnRegressor()
+reg = AutoSklearnRegressor()
 reg.fit(X_train_airfoil, y_train_airfoil)
 predictions = reg.predict(X_test_airfoil)
 
